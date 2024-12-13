@@ -26,25 +26,6 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a9
 
 # APEX
-DEXPREOPT_GENERATE_APEX_IMAGE := true
-
-# Architecture
-TARGET_ARCH := arm64
-TARGET_ARCH_VARIANT := armv8-a
-TARGET_CPU_ABI := arm64-v8a
-TARGET_CPU_ABI2 := 
-TARGET_CPU_VARIANT := generic
-TARGET_CPU_VARIANT_RUNTIME := generic
-
-# Second Architecture
-TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv7-a-neon
-TARGET_2ND_CPU_ABI := armeabi-v7a
-TARGET_2ND_CPU_ABI2 := armeabi
-TARGET_2ND_CPU_VARIANT := generic
-TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a9
-
-# APEX
 #DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # Additional
@@ -78,7 +59,7 @@ TARGET_USES_LOGD := true
 TWRP_INCLUDE_LOGCAT := true
 TWRP_EVENT_LOGGING := true
 
-
+# Cmdline
 BOARD_KERNEL_CMDLINE := video=vfb:640x400,bpp=32,memsize=3072000 firmware_class.path=/vendor/firmware_mnt/image printk.devkmsg=on bootconfig androidboot.hardware=qcom androidboot.memcg=1 androidboot.load_modules_parallel=true androidboot.usbcontroller=4e00000.dwc3 loop.max_part=7
 
 # Kernel
@@ -169,7 +150,7 @@ TW_FORCE_KEYMASTER_VER := true
 TW_EXCLUDE_TWRPAPP := true
 
 # VERSION
-TW_DEVICE_VERSION := MrFluffy0ven_a05s
+TW_DEVICE_VERSION := MrFluffy0ven_m14
 
 # USB
 TW_EXCLUDE_DEFAULT_USB_INIT := true
